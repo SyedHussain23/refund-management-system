@@ -1,123 +1,118 @@
-```md
 # 🚀 Refund Management System
 
-A production-grade refund request platform built with Next.js and Supabase, designed to simulate a real-world internal operations tool.
+A production-grade refund request platform built using Next.js and Supabase, designed to simulate a real-world internal operations tool with clean architecture and scalable design.
 
 ---
 
 ## 🧠 Overview
 
-This system enables users to submit refund requests with proper validation, file uploads, and persistent storage. It includes business logic such as refund eligibility checks and provides a structured workflow similar to enterprise-level applications.
+This system allows users to submit refund requests with validation, conditional business logic, file uploads, and persistent storage.
 
-The project focuses on clean architecture, user experience, and real-world functionality rather than just UI demonstration.
+It is designed to reflect how real-world operational tools are built — focusing on reliability, usability, and structured workflows rather than just UI.
 
 ---
 
 ## ✨ Key Features
 
 ### 📝 Refund Request Form
-- Full form with validation
-- Required and optional fields handled correctly
-- Real-time error feedback
+- Fully validated input fields  
+- Clear separation of required and optional data  
+- Real-time validation feedback  
 
-### ⚠️ Business Logic
-- Automatic 90-day eligibility detection
-- Warning banner for late requests
-- Future date validation prevention
+### ⚠️ Business Logic Handling
+- Automatic 90-day eligibility detection  
+- Conditional warning banner display  
+- Prevention of invalid future dates  
 
 ### 📎 File Upload System
-- Supports images (JPG, PNG) and PDF files
-- Secure upload via Supabase Storage
-- Thumbnail preview for images
-- File metadata handling
+- Supports image and PDF uploads  
+- Secure storage using Supabase Storage  
+- Clean file preview (non-intrusive UI)  
+- File linked to database records  
 
 ### 💾 Data Persistence
-- All submissions stored in Supabase database
-- File URLs linked with records
-- Reliable backend integration
+- Data stored in Supabase PostgreSQL  
+- Each submission is retrievable  
+- File URL stored alongside record  
 
 ### 📊 Submission Summary
-- Displays actual submitted data
-- Structured confirmation UI
-- Reset and re-submit option
+- Displays actual submitted data  
+- Structured confirmation view  
+- Reset flow for multiple submissions  
 
-### 🛠 Admin Panel
-- View all refund records
-- Structured table display
-- Useful for operations teams
+### 🛠 Admin Dashboard
+- View all submitted refund requests  
+- Clean tabular layout  
+- Useful for operations review  
 
 ### 📱 Responsive Design
-- Fully mobile-friendly layout
-- Optimized spacing and usability
-- Tested across device sizes
+- Fully optimized for mobile screens  
+- Tested using browser device simulation  
+- Consistent spacing and alignment  
 
-### 🌙 Dark Mode Support
-- Toggle between light and dark themes
-- Persistent UI styling
+### 🌙 Theme Support
+- Light and dark mode support  
+- Smooth UI transitions  
 
 ---
 
 ## 🏗️ Tech Stack
 
-- **Frontend:** Next.js (App Router)
-- **Language:** TypeScript
-- **Styling:** Tailwind CSS + Custom UI
-- **Backend:** Supabase (Database + Storage)
-- **Deployment:** Vercel
+- **Frontend:** Next.js (App Router)  
+- **Language:** TypeScript  
+- **Styling:** Tailwind CSS + Custom UI system  
+- **Backend:** Supabase (Database + Storage)  
+- **Deployment:** Vercel  
 
 ---
 
 ## 📁 Project Structure
 
 ```
-
 app/
-├── page.tsx
-├── layout.tsx
-├── admin/
+  ├── page.tsx
+  ├── layout.tsx
+  ├── admin/
 components/
-├── RefundForm.tsx
-├── FormField.tsx
-├── SuccessView.tsx
+  ├── RefundForm.tsx
+  ├── FormField.tsx
+  ├── SuccessView.tsx
 lib/
-├── supabase.ts
-├── utils.ts
+  ├── supabase.ts
+  ├── utils.ts
 types/
-├── index.ts
+  ├── index.ts
 public/
-
 ```
 
 ---
 
 ## 🔐 Environment Variables
 
-Create a `.env.local` file in the root directory:
+Create a `.env.local` file:
 
 ```
-
 NEXT_PUBLIC_SUPABASE_URL=your_supabase_url
 NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_key
-
-````
+```
 
 ---
 
 ## ⚙️ Getting Started
 
-### Install dependencies
+Install dependencies:
 
-```bash
+```
 npm install
-````
+```
 
-### Run development server
+Run the app:
 
-```bash
+```
 npm run dev
 ```
 
-Open in browser:
+Open:
 
 ```
 http://localhost:3000
@@ -125,64 +120,59 @@ http://localhost:3000
 
 ---
 
-## 🚀 Deployment
+## 🚀 Deployment (Vercel)
 
-This project is deployed using Vercel.
-
-Steps:
-
-1. Push code to GitHub
-2. Import project in Vercel
-3. Add environment variables
-4. Deploy
+1. Push project to GitHub  
+2. Import repository into Vercel  
+3. Add environment variables  
+4. Deploy  
 
 ---
 
-## 📌 Design Approach
+## 📌 Engineering Focus
 
-This project was built with a focus on:
+This project demonstrates:
 
-* Clean UI/UX similar to production tools
-* Proper separation of concerns
-* Scalable component structure
-* Real-world business logic implementation
-* Error handling and edge case coverage
-
----
-
-## 🧪 Validation & Edge Cases Covered
-
-* Required field validation
-* Email format validation
-* Future booking date restriction
-* 90-day eligibility logic
-* File type and preview handling
+- Clean component-based architecture  
+- Real-world form handling and validation  
+- Backend integration with database and storage  
+- Thoughtful UX and interaction design  
+- Maintainable and scalable code structure  
 
 ---
 
-## 📈 What This Project Demonstrates
+## 🧪 Edge Cases Covered
 
-* Full-stack application development
-* API and database integration
-* State management in React
-* File handling in web applications
-* Responsive UI design principles
-* Production-level code organization
+- Invalid email formats  
+- Missing required fields  
+- Future booking dates blocked  
+- 90+ day conditional logic  
+- File upload validation and preview handling  
+
+---
+
+## 📈 What This Project Represents
+
+This is not a template-based UI project.  
+It reflects a practical understanding of building production-ready applications with:
+
+- Functional backend integration  
+- Business logic implementation  
+- Clean UI/UX decisions  
+- Real-world usability considerations  
 
 ---
 
 ## 📬 Contact
 
-For any questions or collaboration:
+🔗 LinkedIn:  
+https://www.linkedin.com/in/syed-hussain-abdul-hakeem  
 
-📧 Email: https://www.linkedin.com/in/syed-hussain-abdul-hakeem
-
-🔗 GitHub:https://github.com/SyedHussain23
+🔗 GitHub:  
+https://github.com/SyedHussain23  
 
 ---
 
 ## ⭐ Final Note
 
-This project is built to reflect real-world engineering practices, focusing on usability, scalability, and clean architecture rather than just visual design.
-
-````
+Built with a focus on clarity, usability, and real-world engineering practices.
